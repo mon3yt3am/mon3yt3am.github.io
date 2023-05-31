@@ -43,6 +43,10 @@ h2 {
   left: -10px;
   color: rgb( 61, 61, 61 );
   display: block;
+  transition: color .222s ease-in-out;
+}
+#hamburger_close:hover {
+  color:rgb( 121, 121, 121 );
 }
 .options.options-open {
   left: 0px;
@@ -60,9 +64,28 @@ h2 {
 .options>ul>li>a {
   color: rgb( 61, 61, 61 );
   text-decoration: none;
-  transition: color .222s ease-in-out;
+  transition: color .111s ease-in-out;
 }
-.options>ul>li>a:hover {
-  color: rgb( 121, 121, 121 );
-  text-decoration: underline;
+.options>ul>li>a:hover { color: rgb( 121, 121, 121 ); }
+
+.hover_underline_anim {
+  display: inline-block;
+  position: relative;
+  color: rgb( 61, 61, 61 );
+}
+.hover_underline_anim::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 10px;
+  left: 0;
+  background-color: rgb( 121, 121, 121 );
+  transform-origin: bottom right;
+  transition: transform 0.111s ease-out;
+}
+.hover_underline_anim:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
