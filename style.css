@@ -1,0 +1,63 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: rgb( 24, 24, 24 );
+}
+
+h2 {
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translateX( -50% );
+  color: rgb( 61, 61, 61 );
+  transition: color .333s ease-in-out;
+}
+
+#hamburger {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: rgb( 61, 61, 61 );
+}
+
+.options {
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 33%;
+  height: 100%;
+  background-color: rgb( 24, 24, 24 );
+  box-shadow: 0 0 15px rgba( 0, 0, 0, 0.5 );
+  z-index: 1;
+  display: block;
+  transition: left .75s ease-in-out;
+}
+#hamburger_close {
+  position: absolute;
+  top: 10px;
+  left: -10px;
+  color: rgb( 61, 61, 61 );
+  display: block;
+}
+.options.options-open {
+  left: 0px;
+}
+.options.options-open #hamburger_close {
+  left: 10px;
+}
+.options>ul {
+  list-style: none;
+}
+.options>ul>li {
+  padding: 10px;
+  font-size: 1.5em;
+}
+.options>ul>li>a {
+  color: rgb( 61, 61, 61 );
+  text-decoration: none;
+  transition: color .222s ease-in-out;
+}
+.options>ul>li>a:hover {
+  color: rgb( 121, 121, 121 );
+}
