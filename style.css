@@ -74,7 +74,7 @@ h2 {
   top: 15%;
   left: 50%;
   transform: translateX( -50% );
-  min-width: 500px;
+  min-width: 450px;
   width: 50%;
   max-width: 1000px;
   border-collapse: collapse;
@@ -83,14 +83,16 @@ h2 {
   color: rgb( 61, 61, 61 );
   position: relative;
   top: 42px;
-  left: -90px;
+  right: -38%;
   transition: background-color .222s ease-in-out; }
-.service_paragraph {
+.service_title {
   color: rgb( 61, 61, 61 );
   position: relative;
   top: -10px;
-  left: 24px;
+  left: 15px;
+  width: 195px;
   font-size: 1.5em;
+  text-align: left;
   transition: background-color .222s ease-in-out; }
 .service_hover {
   background-color: rgb( 24, 24, 24 );
@@ -99,4 +101,4 @@ h2 {
   background-color: rgb( 61, 61, 61 );
   cursor: pointer; }
 .service_hover:hover .service_icons { color: rgb( 24, 24, 24 ); }
-.service_hover:hover .service_paragraph { color: rgb( 24, 24, 24 ); }
+.service_hover:hover .service_title { color: rgb( 24, 24, 24 ); }
