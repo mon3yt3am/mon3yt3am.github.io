@@ -14,26 +14,32 @@
     <h2>money team services</h2>
     <table class="service">
       <tr>
-        <th class="service_hover">
+        <th class="service_hover" onclick="show_paragraph( 1 )">
           <i class="fa-solid fa-laptop-code fa-2xl service_icons"></i>
           <p class="service_title">software</p>
         </th>
-        <th class="service_hover">
+        <th class="service_hover" onclick="show_paragraph( 2 )">
           <i class="fa-solid fa-mobile-screen-button fa-2xl service_icons"></i>
           <p class="service_title">social</p>
         </th>
       </tr>
       <tr>
-        <th class="service_hover">
+        <th class="service_hover" onclick="show_paragraph( 3 )">
           <i class="fa-solid fa-store fa-2xl service_icons"></i>
           <p class="service_title">marketing</p>
         </th>
-        <th class="service_hover">
+        <th class="service_hover" onclick="show_paragraph( 4 )">
           <i class="fa-solid fa-shield-halved fa-2xl service_icons"></i>
           <p class="service_title">cyber sec.</p>
         </th>
       </tr>
     </table>
+    <div id="hidden_paragraph">
+      <h2 class="hidden_txt">software header</h2><p class="hidden_txt">placeholder<br>text</p>
+      <h2 class="hidden_txt">social header</h2><p class="hidden_txt">placeholder<br>text</p>
+      <h2 class="hidden_txt">marketing header</h2><p class="hidden_txt">placeholder<br>text</p>
+      <h2 class="hidden_txt">cyber sec. header</h2><p class="hidden_txt">placeholder<br>text</p>
+    </div>
 
     <div class="options">
       <a href="#" onclick="toggle_options( )">
