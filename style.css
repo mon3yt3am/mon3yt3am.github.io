@@ -84,8 +84,7 @@ h2 {
   width: 50%;
   max-width: 1000px;
   text-align: center;
-  color:rgb( 99, 99, 99 );
-}
+  color:rgb( 99, 99, 99 ); }
 
 .service {
   position: absolute;
@@ -106,8 +105,7 @@ h2 {
   width: 50%;
   max-width: 1000px;
   color: rgb( 61, 61, 61 );
-  text-decoration: underline;
-}
+  text-decoration: underline; }
 .service_icons {
   color: rgb( 61, 61, 61 );
   position: relative;
@@ -172,8 +170,7 @@ h2 {
   color: rgb( 61, 61, 61 );
   font-family: 'Courier New', Courier, monospace;
   font-weight: bold;
-  font-size: large;}
-
+  font-size: large; }
 .contact_us:hover {
   cursor: pointer;
   color:rgb( 24, 24, 24 );
