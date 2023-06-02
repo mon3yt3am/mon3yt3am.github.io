@@ -137,3 +137,26 @@ h2 {
   padding: 10px;
   font-size: 1.5em;
   text-align: left; }
+
+.contact_us {
+  background-color: rgb( 24, 24, 24 );
+  border: 2px solid rgb( 69, 69, 69 );
+  position: fixed;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX( -50% );
+  min-width: 200px;
+  width: 25%;
+  max-width: 400px;
+  height: 50px;
+  text-align: center;
+  transition: ease-in-out .175s;
+  color: rgb( 61, 61, 61 );
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  font-size: large;}
+
+.contact_us:hover {
+  cursor: pointer;
+  color:rgb( 24, 24, 24 );
+  background-color: rgb( 61, 61, 61 ); }

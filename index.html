@@ -7,8 +7,8 @@
     <script src="https://kit.fontawesome.com/8de8e72679.js" crossorigin="anonymous"></script>
   </head>
   <body>
-    <!-- make this single page so you just scroll down and see everything, stuff in hamburger menu just jumps to it -->
-    <a href="#" onclick="toggle_options( )">
+    <!-- implement smooth scrolling cuz wtf is that ugly ahh jump -->
+    <a href="#" onclick="toggle_options( )" id="home_jump">
       <i class="fa-solid fa-backward-fast fa-fade fa-xl" id="hamburger"></i>
     </a>
     <div class="options">
@@ -24,7 +24,7 @@
     </div>
 
     <!-- header section ( logo ? )-->
-    <h2 id="home_jump">money team main page</h2>
+    <h2>money team main page</h2>
     <!-- mission statement -->
     <!-- description-->
 
@@ -59,6 +59,11 @@
     </div>
 
     <!-- contact us button ( stuck static on bottom of screen )-->
+    <a href="#">
+      <button class="contact_us">
+      contact us
+      </button>
+    </a>
 
     <script src="script.js"></script>
   </body>
