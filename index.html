@@ -7,25 +7,58 @@
     <script src="https://kit.fontawesome.com/8de8e72679.js" crossorigin="anonymous"></script>
   </head>
   <body>
+    <!-- make this single page so you just scroll down and see everything, stuff in hamburger menu just jumps to it -->
     <a href="#" onclick="toggle_options( )">
       <i class="fa-solid fa-backward-fast fa-fade fa-xl" id="hamburger"></i>
     </a>
-
-    <h2>money team main page</h2>
-
     <div class="options">
       <a href="#" onclick="toggle_options( )">
         <i class="fa-solid fa-circle-xmark fa-xl" id="hamburger_close"></i>
       </a>
       <br><br><br>
       <ul>
-        <li class="hover_underline_anim"><a href="index.html">home</a></li><br><br>
-        <li class="hover_underline_anim"><a href="service.html">service</a></li><br><br>
-        <li class="hover_underline_anim"><a href="#">portfolio</a></li><br><br>
-        <li class="hover_underline_anim"><a href="#">about us</a></li><br><br>
-        <li class="hover_underline_anim"><a href="#">contact</a></li><br><br>
+        <li class="hover_underline_anim"><a rel="noopener" href="#home_jump" onclick="toggle_options( )">home</a></li><br><br>
+        <li class="hover_underline_anim"><a rel="noopener" href="#service_jump" onclick="toggle_options( )">service</a></li><br><br>
+        <li class="hover_underline_anim"><a href="#">about us</a></li><br><br> <!-- have each person and their specific portfolio ( see "our people" in slides ) -->
       </ul>
     </div>
+
+    <!-- header section ( logo ? )-->
+    <h2 id="home_jump">money team main page</h2>
+    <!-- mission statement -->
+    <!-- description-->
+
+    <h2 class="service_header" id="service_jump">services</h2>
+    <table class="service">
+      <tr>
+        <th class="service_hover" onclick="show_paragraph( 1 )">
+          <i class="fa-solid fa-laptop-code fa-2xl service_icons"></i>
+          <p class="service_title">software</p>
+        </th>
+        <th class="service_hover" onclick="show_paragraph( 2 )">
+          <i class="fa-solid fa-mobile-screen-button fa-2xl service_icons"></i>
+          <p class="service_title">social</p>
+        </th>
+      </tr>
+      <tr>
+        <th class="service_hover" onclick="show_paragraph( 3 )">
+          <i class="fa-solid fa-store fa-2xl service_icons"></i>
+          <p class="service_title">marketing</p>
+        </th>
+        <th class="service_hover" onclick="show_paragraph( 4 )">
+          <i class="fa-solid fa-shield-halved fa-2xl service_icons"></i>
+          <p class="service_title">cyber sec.</p>
+        </th>
+      </tr>
+    </table>
+    <div id="hidden_paragraph">
+      <h2 class="hidden_txt">software header</h2><p class="hidden_txt">placeholder<br>text</p>
+      <h2 class="hidden_txt">social header</h2><p class="hidden_txt">placeholder<br>text</p>
+      <h2 class="hidden_txt">marketing header</h2><p class="hidden_txt">placeholder<br>text</p>
+      <h2 class="hidden_txt">cyber sec. header</h2><p class="hidden_txt">placeholder<br>text</p>
+    </div>
+
+    <!-- contact us button ( stuck static on bottom of screen )-->
 
     <script src="script.js"></script>
   </body>

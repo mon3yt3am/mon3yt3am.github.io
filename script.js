@@ -15,10 +15,23 @@ var cyber = document.getElementsByClassName("hidden_txt")[6];
 var cyber_sub = document.getElementsByClassName("hidden_txt")[7];
 var activeButton = null;
 
+// Hide all the elements initially
+hideAllElements();
+
+function hideAllElements() {
+  software.style.display = "none";
+  software_sub.style.display = "none";
+  social.style.display = "none";
+  social_sub.style.display = "none";
+  marketing.style.display = "none";
+  marketing_sub.style.display = "none";
+  cyber.style.display = "none";
+  cyber_sub.style.display = "none";
+}
+
 function show_paragraph(num) {
   var currentButton = null;
   var currentParagraph = null;
-  var currentSubtext = null;
 
   switch (num) {
     case 1:
@@ -41,21 +54,16 @@ function show_paragraph(num) {
 
   if (activeButton === currentButton) {
     // Hide the container and reset styles if the same button is pressed twice
-    paragraph_container.style.top = "15%";
+    paragraph_container.style.top = "1000px";
     paragraph_container.style.opacity = "0";
     activeButton = null;
   } else {
     // Show the selected button's paragraph and subtext
+    hideAllElements(); // Hide all elements before showing the selected ones
     currentButton.style.display = "block";
     currentParagraph.style.display = "block";
-    paragraph_container.style.top = "50%";
+    paragraph_container.style.top = "1250px";
     paragraph_container.style.opacity = "1";
-
-    // Hide the previous button's paragraph and subtext if any
-    if (activeButton !== null) {
-      activeButton.style.display = "none";
-      activeButton.nextElementSibling.style.display = "none";
-    }
 
     activeButton = currentButton;
   }
