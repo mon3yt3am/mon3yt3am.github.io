@@ -69,6 +69,24 @@ h2 {
   transform: scaleX(1);
   transform-origin: bottom left; }
 
+.brand_name {
+  position: absolute;
+  top: 25px;
+  left: 50%;
+  transform: translateX( -50% );
+  color: rgb( 61, 61, 61 ); }
+.mission_statement {
+  position: absolute;
+  top: 100px;
+  left: 50%;
+  transform: translateX( -50% );
+  min-width: 450px;
+  width: 50%;
+  max-width: 1000px;
+  text-align: center;
+  color:rgb( 99, 99, 99 );
+}
+
 .service {
   position: absolute;
   top: 1000px;
