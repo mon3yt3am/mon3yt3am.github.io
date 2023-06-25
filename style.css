@@ -13,20 +13,20 @@ h2 {
   color: rgb( 61, 61, 61 ); }
 
 .options {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: -100%;
   min-width: 242px;
   width: 33%;
   max-width: 500px;
-  height: 400%;
+  height: 100%;
   background-color: rgb( 24, 24, 24 );
   box-shadow: 0 0 15px rgba( 0, 0, 0, 0.5 );
   z-index: 1;
   display: block;
-  transition: left .75s ease-in-out; }
+  transition: left .333s ease-in-out; }
 #hamburger {
-  position: absolute;
+  position: fixed;
   top: 25px;
   right: 15px;
   color: rgb( 61, 61, 61 ); }
@@ -175,3 +175,4 @@ h2 {
   cursor: pointer;
   color:rgb( 24, 24, 24 );
   background-color: rgb( 61, 61, 61 ); }
+
