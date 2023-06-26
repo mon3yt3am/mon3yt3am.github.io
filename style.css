@@ -1,6 +1,6 @@
 html {
   width: 100%;
-  height: 100%;
+  height: 3500px;
   margin: 0;
   padding: 0;
   background-color: rgb( 24, 24, 24 ); }
@@ -11,6 +11,8 @@ h2 {
   width: 100%;
   text-align: center;
   color: rgb( 61, 61, 61 ); }
+
+#col_red { color: rgb( 125, 66, 66 ); }
 
 .options {
   position: fixed;
@@ -84,7 +86,9 @@ h2 {
   width: 50%;
   max-width: 1000px;
   text-align: center;
-  color:rgb( 99, 99, 99 ); }
+  color:rgb( 99, 99, 99 );
+  border: 1px solid rgb( 125, 66, 66 );
+  padding: 10px; }
 
 .service {
   position: absolute;
@@ -104,10 +108,9 @@ h2 {
   min-width: 450px;
   width: 50%;
   max-width: 1000px;
-  color: rgb( 61, 61, 61 );
-  text-decoration: underline; }
+  color: rgb( 61, 61, 61 ); }
 .service_icons {
-  color: rgb( 61, 61, 61 );
+  color: rgb( 88, 66, 66 );
   position: relative;
   top: 42px;
   right: -38%;
@@ -127,7 +130,7 @@ h2 {
 .service_hover:hover {
   background-color: rgb( 61, 61, 61 );
   cursor: pointer; }
-.service_hover:hover .service_icons { color: rgb( 24, 24, 24 ); }
+.service_hover:hover .service_icons { color: rgb( 125, 66, 66 ); }
 .service_hover:hover .service_title { color: rgb( 24, 24, 24 ); }
 
 #hidden_paragraph {
@@ -176,3 +179,34 @@ h2 {
   color:rgb( 24, 24, 24 );
   background-color: rgb( 61, 61, 61 ); }
 
+.bio_header {
+  position: absolute;
+  top: 1920px;
+  left: 50%;
+  transform: translateX( -50% );
+  min-width: 450px;
+  width: 50%;
+  max-width: 1000px;
+  color: rgb( 61, 61, 61 ); }
+#bio {
+  position: absolute;
+  top: 2000px;
+  left: 50%;
+  transform: translateX( -50% );
+  min-width: 450px;
+  width: 66%;
+  max-width: 1500px;
+  border: 1px solid rgb( 125, 66, 66 );
+  color: rgb( 61, 61, 61 );
+  column-count: 4; }
+.bio_img {
+  display: block;
+  width: 90%;
+  height: auto;
+  padding: 5%; }
+.bio_txt {
+  display: block;
+  width: 100%;
+  height: auto;
+  text-align: center; }
+  
