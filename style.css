@@ -147,17 +147,19 @@ h2 {
   background-color: rgb( 24, 24, 24 );
   box-shadow: 0 0 15px rgba( 0, 0, 0, 0.5 );
   transition: ease-in-out .222s; }
+#hidden_paragraph>h2 {
+  text-align: center; }
 .hidden_txt {
   position: relative;
   top: 0;
-  left: 0;
-  width: 100%;
+  left: 15%;
+  width: 70%;
   height: 100%;
   display: none;
   color: rgb( 61, 61, 61 );
   padding: 10px;
   font-size: 1.5em;
-  text-align: left; }
+  text-align: left;}
 
 .contact_us {
   background-color: rgb( 24, 24, 24 );
