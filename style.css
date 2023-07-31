@@ -9,10 +9,6 @@ html {
 body {
   font-family: 'Courier New', Courier, monospace;
   font-size: large; }
-h2 {
-  width: 100%;
-  text-align: center;
-  color: rgb( 61, 61, 61 ); }
 
 #col_red { color: rgb( 125, 66, 66 ); }
 
@@ -75,13 +71,13 @@ h2 {
 
 .brand_name {
   position: absolute;
-  top: 25px;
-  left: 50%;
-  transform: translateX( -50% );
-  color: rgb( 61, 61, 61 ); }
+  top: 35px;
+  left: 150px;
+  color: rgb( 61, 61, 61 );
+  font-size: 2em; }
 .mission_statement {
   position: absolute;
-  top: 100px;
+  top: 150px;
   left: 50%;
   transform: translateX( -50% );
   min-width: 300px;
@@ -90,7 +86,14 @@ h2 {
   text-align: center;
   color:rgb( 99, 99, 99 );
   border: 1px solid rgb( 125, 66, 66 );
-  padding: 10px; }
+  padding: 10px;
+  font-size: 1.5em; }
+#logo {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  width: 120px;
+  height: 120px; }
 
 .service {
   position: absolute;
@@ -110,7 +113,8 @@ h2 {
   min-width: 450px;
   width: 50%;
   max-width: 1000px;
-  color: rgb( 61, 61, 61 ); }
+  color: rgb( 61, 61, 61 );
+  text-align: center; }
 .service_icons {
   color: rgb( 88, 66, 66 );
   position: relative;
@@ -191,7 +195,8 @@ h2 {
   min-width: 450px;
   width: 50%;
   max-width: 1000px;
-  color: rgb( 61, 61, 61 ); }
+  color: rgb( 61, 61, 61 );
+  text-align: center;}
 #bio {
   position: absolute;
   top: 2000px;
