@@ -8,21 +8,16 @@
     <script src="https://kit.fontawesome.com/8de8e72679.js" crossorigin="anonymous"></script>
   </head>
   <body>
+    <!-- fix me 
+    <div id="background_container">
+      <img src="./img/background.png" id="background"></img>
+      <div id="background_highlight"></div>
+    </div>
+    -->
+
     <a href="javascript:void(0)" onclick="toggle_options( )" id="home_jump">
       <i class="fa-solid fa-backward-fast fa-fade fa-xl" id="hamburger"></i>
     </a>
-    <div class="options">
-      <a href="javascript:void(0)" onclick="toggle_options( )">
-        <i class="fa-solid fa-circle-xmark fa-xl" id="hamburger_close"></i>
-      </a>
-      <br><br><br>
-      <ul>
-        <li class="hover_underline_anim"><a rel="noopener" href="#home_jump" onclick="toggle_options( )">home</a></li><br><br>
-        <li class="hover_underline_anim"><a rel="noopener" href="#service_jump" onclick="toggle_options( )">service</a></li><br><br>
-        <li class="hover_underline_anim"><a rel="noopener" href="#bio_jump" onclick="toggle_options( )">about us</a></li><br><br>
-      </ul>
-    </div>
-
     <!-- put into a single container -->
     <img id="logo" src="./img/logo.png"></img>
     <h2 class="brand_name">snap.<span id="col_red">red</span></h2>
@@ -33,7 +28,7 @@ Leveraging disruptive technology to create digital growth and personalized IT so
     <h2 class="service_header" id="service_jump">services</h2>
     <table class="service">
       <tr>
-        <th class="service_hover" onclick="show_paragraph( 1 )">
+        <th class="service_hover" onclick="show_paragraph( 0 )">
           <i class="fa-solid fa-laptop-code fa-2xl service_icons"></i>
           <p class="service_title">software</p>
         </th>
@@ -43,11 +38,11 @@ Leveraging disruptive technology to create digital growth and personalized IT so
         </th>
       </tr>
       <tr>
-        <th class="service_hover" onclick="show_paragraph( 3 )">
+        <th class="service_hover" onclick="show_paragraph( 4 )">
           <i class="fa-solid fa-store fa-2xl service_icons"></i>
           <p class="service_title">marketing</p>
         </th>
-        <th class="service_hover" onclick="show_paragraph( 4 )">
+        <th class="service_hover" onclick="show_paragraph( 6 )">
           <i class="fa-solid fa-shield-halved fa-2xl service_icons"></i>
           <p class="service_title">cyber sec.</p>
         </th>
@@ -59,7 +54,7 @@ Leveraging disruptive technology to create digital growth and personalized IT so
           S : Study Infrastructure<br>
           N : Needs Analysis<br>
           A : Action Plan<br>
-          P : Production Review<br>
+          P : Production Review
         </p>
 
       <h2 class="hidden_txt">automation consulting</h2>
@@ -67,7 +62,7 @@ Leveraging disruptive technology to create digital growth and personalized IT so
           S : Survey Workflow<br>
           N : Niche Identification<br>
           A : Automation Implementation<br>
-          P : Performance Optimization<br>
+          P : Performance Optimization
         </p>
 
       <h2 class="hidden_txt">marketing consulting</h2>
@@ -75,7 +70,7 @@ Leveraging disruptive technology to create digital growth and personalized IT so
           S : Situation Analysis<br>
           N : Needs Assessment<br>
           A : Action Plan<br>
-          P : Presentation Analysis<br>
+          P : Presentation Analysis
         </p>
 
       <h2 class="hidden_txt">cyber security consulting</h2>
@@ -83,7 +78,7 @@ Leveraging disruptive technology to create digital growth and personalized IT so
           S : Security Assessment<br>
           N : Network Protection<br>
           A : Awareness Training<br>
-          P : Proactive Monitoring<br>
+          P : Proactive Monitoring
         </p>
     </div>
 
@@ -120,6 +115,19 @@ Leveraging disruptive technology to create digital growth and personalized IT so
       contact us
       </button>
     </a>
+
+<!-- option bar -->
+    <div class="options">
+      <a href="javascript:void(0)" onclick="toggle_options( )">
+        <i class="fa-solid fa-circle-xmark fa-xl" id="hamburger_close"></i>
+      </a>
+      <br><br><br>
+      <ul>
+        <li class="hover_underline_anim"><a rel="noopener" href="#home_jump" onclick="toggle_options( )">home</a></li><br><br>
+        <li class="hover_underline_anim"><a rel="noopener" href="#service_jump" onclick="toggle_options( )">service</a></li><br><br>
+        <li class="hover_underline_anim"><a rel="noopener" href="#bio_jump" onclick="toggle_options( )">about us</a></li><br><br>
+      </ul>
+    </div>
 
     <script src="script.js"></script>
   </body>
