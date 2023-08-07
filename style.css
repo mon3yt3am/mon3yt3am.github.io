@@ -35,7 +35,8 @@ body {
   left: 0;
   width: 100%;
   height: 3100px;
-  overflow: hidden; }
+  overflow: hidden;
+  z-index: -2;}
 
 .options {
   position: fixed;
