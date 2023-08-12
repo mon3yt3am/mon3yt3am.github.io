@@ -41,41 +41,21 @@ body {
 .options {
   position: fixed;
   top: 0;
-  left: -100%;
-  min-width: 242px;
-  width: 33%;
-  max-width: 500px;
-  height: 100%;
+  left: 0;
+  width: 100%;
+  height: 35px;
   background-color: rgb( 24, 24, 24 );
   box-shadow: 0 0 15px rgba( 0, 0, 0, 0.5 );
   z-index: 1;
   display: block;
-  transition: left .333s ease-in-out; }
-#hamburger {
-  position: fixed;
-  top: 25px;
-  right: 15px;
-  color: rgb( 61, 61, 61 ); }
-#hamburger_close {
-  position: absolute;
-  top: 25px;
-  left: -10px;
-  color: rgb( 61, 61, 61 );
-  display: block;
-  transition: color .222s ease-in-out; }
-#hamburger_close:hover { color:rgb( 121, 121, 121 ); }
-.options.options-open { left: 0px; }
-.options.options-open #hamburger_close { left: 10px; }
-.options>ul { list-style: none; }
-.options>ul>li {
-  padding: 10px;
-  font-size: 1.5em; }
-.options>ul>li>a {
+  text-align: center; }
+.options>a {
   color: rgb( 61, 61, 61 );
   text-decoration: none;
-  transition: color .111s ease-in-out; }
-.options>ul>li>a:hover { color: rgb( 121, 121, 121 ); }
-
+  transition: color .111s ease-in-out;
+  display: inline-block;
+  padding: 13px 10%;}
+.options>a:hover { color: rgb( 121, 121, 121 ); }
 .hover_underline_anim {
   display: inline-block;
   position: relative;
@@ -97,7 +77,7 @@ body {
 
 .brand_name {
   position: absolute;
-  top: 35px;
+  top: 55px;
   left: 150px;
   color: rgb( 61, 61, 61 );
   font-size: 2em; }
@@ -117,7 +97,7 @@ body {
   font-size: 1.5em; }
 #logo {
   position: absolute;
-  top: 30px;
+  top: 50px;
   left: 30px;
   width: 120px;
   height: 120px; }
@@ -209,10 +189,6 @@ body {
   font-family: 'Courier New', Courier, monospace;
   font-weight: bold;
   font-size: large; }
-.contact_us:hover {
-  cursor: pointer;
-  color:rgb( 24, 24, 24 );
-  background-color: rgb( 61, 61, 61 ); }
 
 .bio_header {
   position: absolute;

@@ -1,52 +1,51 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <br><br>
     <title>snap.red</title>
-    <meta charset="utf-8">
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/8de8e72679.js" crossorigin="anonymous"></script>
   </head>
-  <body>
-    <div id="background_container">
-      <div id="background"></div>
+  <body id="home_jump">
+    <div id="background_container"><div id="background"></div></div>
+
+    <div class="options">
+      <a rel="noopener" class="hover_underline_anim" href="#home_jump">Home</a>
+      <a rel="noopener" class="hover_underline_anim" href="#service_jump">Service</a>
+      <a rel="noopener" class="hover_underline_anim" href="#bio_jump">About Us</a>
     </div>
 
-    <a href="javascript:void(0)" onclick="toggle_options( )" id="home_jump">
-      <i class="fa-solid fa-backward-fast fa-fade fa-xl" id="hamburger"></i>
-    </a>
     <!-- put into a single container -->
     <img id="logo" src="./img/logo.png"></img>
     <h2 class="brand_name">snap.<span id="col_red">red</span></h2>
     <p class="mission_statement">
-Leveraging disruptive technology to create digital growth and personalized IT solutions for your various business needs utilizing our innovative S.N.A.P. methodology.
+Snap.<span id="col_red">Red</span> is a cutting-edge AI consulting firm that pioneers innovative solutions in software design, AI automation, marketing, and cyber security. Our startup is dedicated to revolutionizing businesses' approach to aritificial intelligence and empowering them to unlock the full potential of AI-driven technologies.
     </p>
 
-    <h2 class="service_header" id="service_jump">services</h2>
+    <h2 class="service_header" id="service_jump">Services</h2>
     <table class="service">
       <tr>
         <th class="service_hover" onclick="show_paragraph( 0 )">
           <i class="fa-solid fa-laptop-code fa-2xl service_icons"></i>
-          <p class="service_title">software</p>
+          <p class="service_title">Software</p>
         </th>
         <th class="service_hover" onclick="show_paragraph( 2 )">
           <i class="fa-solid fa-mobile-screen-button fa-2xl service_icons"></i>
-          <p class="service_title">automation</p>
+          <p class="service_title">Automation</p>
         </th>
       </tr>
       <tr>
         <th class="service_hover" onclick="show_paragraph( 4 )">
           <i class="fa-solid fa-store fa-2xl service_icons"></i>
-          <p class="service_title">marketing</p>
+          <p class="service_title">Marketing</p>
         </th>
         <th class="service_hover" onclick="show_paragraph( 6 )">
           <i class="fa-solid fa-shield-halved fa-2xl service_icons"></i>
-          <p class="service_title">cyber sec.</p>
+          <p class="service_title">Cyber sec.</p>
         </th>
       </tr>
     </table>
     <div id="hidden_paragraph">
-      <h2 class="hidden_txt">software consulting</h2>
+      <h2 class="hidden_txt">Software Consulting</h2>
         <p class="hidden_txt">
           S : Study Infrastructure<br>
           N : Needs Analysis<br>
@@ -54,7 +53,7 @@ Leveraging disruptive technology to create digital growth and personalized IT so
           P : Production Review
         </p>
 
-      <h2 class="hidden_txt">automation consulting</h2>
+      <h2 class="hidden_txt">Automation Consulting</h2>
         <p class="hidden_txt">
           S : Survey Workflow<br>
           N : Niche Identification<br>
@@ -62,7 +61,7 @@ Leveraging disruptive technology to create digital growth and personalized IT so
           P : Performance Optimization
         </p>
 
-      <h2 class="hidden_txt">marketing consulting</h2>
+      <h2 class="hidden_txt">Marketing Consulting</h2>
         <p class="hidden_txt">
           S : Social Media Assessment<br>
           N : Narrative Generation<br>
@@ -70,7 +69,7 @@ Leveraging disruptive technology to create digital growth and personalized IT so
           P : Presentation Analysis
         </p>
 
-      <h2 class="hidden_txt">cyber security consulting</h2>
+      <h2 class="hidden_txt">Cyber Security Consulting</h2>
         <p class="hidden_txt">
           S : Security Analysis<br>
           N : Network Protection<br>
@@ -108,24 +107,8 @@ Leveraging disruptive technology to create digital growth and personalized IT so
 
     <!-- update w link -->
     <a href="javascript:void(0)">
-      <button class="contact_us">
-      contact us
-      </button>
+      <button class="contact_us">Contact Us</button>
     </a>
-
-<!-- option bar -->
-    <div class="options">
-      <a href="javascript:void(0)" onclick="toggle_options( )">
-        <i class="fa-solid fa-circle-xmark fa-xl" id="hamburger_close"></i>
-      </a>
-      <br><br><br>
-      <ul>
-        <li class="hover_underline_anim"><a rel="noopener" href="#home_jump" onclick="toggle_options( )">home</a></li><br><br>
-        <li class="hover_underline_anim"><a rel="noopener" href="#service_jump" onclick="toggle_options( )">service</a></li><br><br>
-        <li class="hover_underline_anim"><a rel="noopener" href="#bio_jump" onclick="toggle_options( )">about us</a></li><br><br>
-      </ul>
-    </div>
-
     <script src="script.js"></script>
   </body>
 </html>
