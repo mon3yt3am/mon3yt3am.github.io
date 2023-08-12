@@ -114,7 +114,7 @@ body {
   border: 3px solid rgb( 69, 69, 69 ); }
 .service_header {
   position: absolute;
-  top: 945px;
+  top: 920px;
   left: 50%;
   transform: translateX( -50% );
   min-width: 450px;
