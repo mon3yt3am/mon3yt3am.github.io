@@ -43,18 +43,26 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  height: 35px;
+  height: 105px;
   background-color: rgb( 24, 24, 24 );
   box-shadow: 0 0 15px rgba( 0, 0, 0, 0.5 );
   z-index: 1;
-  display: block;
-  text-align: center; }
-.options>a {
+  display: block; }
+.options>div {
+  position: absolute;
+  top: 0;
+  right: 0; }
+.options>div>a {
+  position: relative;
+  top: 10px;
+  right: 0;
   color: rgb( 61, 61, 61 );
   text-decoration: none;
   transition: color .111s ease-in-out;
   display: inline-block;
-  padding: 13px 10%;}
+  margin: 0 25px;
+  padding: 50px 5px 10px 5px;
+  font-size: 1.5em; }
 .options>a:hover { color: rgb( 121, 121, 121 ); }
 .hover_underline_anim {
   display: inline-block;
@@ -75,32 +83,41 @@ body {
   transform: scaleX(1);
   transform-origin: bottom left; }
 
-.brand_name {
+.mission_container {
   position: absolute;
-  top: 55px;
-  left: 150px;
-  color: rgb( 61, 61, 61 );
-  font-size: 2em; }
+  top: 333px;
+  left: 0;
+  width: 100%;
+  height: 210px;
+  background-color: rgb( 24, 24, 24 );
+  box-shadow: inset 0 0 15px rgba( 0, 0, 0, 0.5 );
+  overflow: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;  }
 .mission_statement {
-  position: absolute;
-  top: 150px;
+  position: relative;
+  top: 5px;
   left: 50%;
   transform: translateX( -50% );
-  min-width: 300px;
-  width: 50%;
+  min-width: 450px;
+  width: 75%;
   max-width: 1000px;
+  height: 150px;
   text-align: center;
-  background-color: rgb( 24, 24, 24 );
   color:rgb( 99, 99, 99 );
-  border: 1px solid rgb( 125, 66, 66 );
-  padding: 10px;
   font-size: 1.5em; }
 #logo {
   position: absolute;
-  top: 50px;
-  left: 30px;
-  width: 120px;
-  height: 120px; }
+  top: 15px;
+  left: 10px;
+  width: 75px;
+  height: 75px; }
+.brand_name {
+  position: absolute;
+  top: 15px;
+  left: 85px;
+  color: rgb( 61, 61, 61 );
+  font-size: 1.5em; }
 
 .service {
   position: absolute;
