@@ -63,7 +63,7 @@ body {
   display: inline-block;
   margin: 0 25px;
   padding: 50px 5px 10px 5px;
-  font-size: 1.5em; }
+  font-size: 1.5em;
   margin: 0 25px;
   padding: 50px 5px 10px 5px;
   font-size: 1.5em; }
@@ -121,7 +121,7 @@ body {
   top: 15px;
   left: 85px;
   color: rgb( 61, 61, 61 );
-  font-size: 1.5em; }
+  font-size: 1.5em;
   top: 15px;
   left: 10px;
   width: 75px;
