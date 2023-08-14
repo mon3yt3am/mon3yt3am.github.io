@@ -29,6 +29,7 @@ function show_paragraph( num ) {
 }
 
 // background highlight
+/* fix top start pos since w ehave static bar now */
 var scroll_percent_mapped = 0;
 var background = document.getElementById( "background" );
 function move_highlight( ) {
