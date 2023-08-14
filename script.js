@@ -33,7 +33,7 @@ function show_paragraph( num ) {
 var scroll_percent_mapped = 0;
 var background = document.getElementById( "background" );
 function move_highlight( ) {
-  const top = -105;
+  const top = -52.5;
   const bottom = 3100 - window.innerHeight;
   const scroll_percent = ( window.scrollY - top ) / ( bottom - top ) * 100;
   scroll_percent_mapped = scroll_percent * ( window.innerHeight / 100 ) + window.scrollY;
