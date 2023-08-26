@@ -41,10 +41,3 @@ function move_highlight( ) {
 window.addEventListener( "scroll", move_highlight );
 
 const delay = ms => new Promise( res => setTimeout( res, ms ) );
-const loopprint = async ( ) => {
-  while( true ) {
-    await delay( 1000 );
-    console.log( scroll_percent_mapped );
-  }
-}
-loopprint( );

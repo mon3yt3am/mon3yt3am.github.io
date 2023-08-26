@@ -4,20 +4,20 @@
   ---lgray: rgb(  99,  99,  99 );
   --llgray: rgb( 121, 121, 121 );
   --fred:   rgb(  88,  66,  66 );
-  --red:    rgb( 125,  66,  66 );
-}
+  --red:    rgb( 125,  66,  66 ); }
 
 html {
   width: 100%;
   height: 3100px;
   margin: 0;
   padding: 0;
-  background-color: var( --dgray );  
+  background-color: var( --dgray );
+  font-family: 'Courier New', Courier, monospace;
+  font-size: large;
   scroll-behavior: smooth;
   -ms-overflow-style: none;
   scrollbar-width: none; }
-html::-webkit-scrollbar {
-  display: none; }
+html::-webkit-scrollbar { display: none; }
 body {
   font-family: 'Courier New', Courier, monospace;
   font-size: large;
@@ -27,9 +27,6 @@ body {
 #col_red { color: var( --red ); }
 
 #background {
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
   height: 3100px;
   background-image: linear-gradient( to bottom, rgba( 255, 255, 255, 0 ) 0px, rgba( 255, 255, 255, .777 ) 0px, rgba( 255, 255, 255, 0 ) 0px ), url('./img/background.png');
@@ -39,12 +36,8 @@ body {
   background-blend-mode: soft-light;
   opacity: .1; }
 #background_container {
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
   height: 3100px;
-  overflow: hidden;
   z-index: -2;}
 
 .options {
@@ -53,14 +46,12 @@ body {
   left: 0;
   width: 100%;
   height: 105px;
-  height: 105px;
   background-color: var( --dgray );
   box-shadow: 0 0 15px rgba( 0, 0, 0, 0.5 );
   z-index: 1;
   display: block; }
 .options>div {
   position: absolute;
-  top: 0;
   right: 0; }
 .options>div>a {
   position: relative;
@@ -70,9 +61,6 @@ body {
   text-decoration: none;
   transition: color .111s ease-in-out;
   display: inline-block;
-  margin: 0 25px;
-  padding: 50px 5px 10px 5px;
-  font-size: 1.5em;
   margin: 0 25px;
   padding: 50px 5px 10px 5px;
   font-size: 1.5em; }
@@ -99,7 +87,6 @@ body {
 .mission_container {
   position: absolute;
   top: 333px;
-  left: 0;
   width: 100%;
   height: 250px;
   background-color: var( --dgray );
@@ -123,16 +110,6 @@ body {
   line-height: 55px; }
 #logo {
   position: absolute;
-  top: 15px;
-  left: 10px;
-  width: 75px;
-  height: 75px; }
-.brand_name {
-  position: absolute;
-  top: 15px;
-  left: 85px;
-  color: var( --mgray );
-  font-size: 1.5em;
   top: 15px;
   left: 10px;
   width: 75px;
@@ -203,11 +180,9 @@ body {
   background-color: var( --dgray );
   box-shadow: 0 0 15px rgba( 0, 0, 0, 0.5 );
   transition: ease-in-out .222s; }
-#hidden_paragraph>h2 {
-  text-align: center; }
+#hidden_paragraph>h2 { text-align: center; }
 .hidden_txt {
   position: relative;
-  top: 0;
   left: 15%;
   width: 70%;
   height: 100%;
