@@ -1,0 +1,84 @@
+:root {
+  --dgray:  rgb(  24,  24,  24 );
+  --mgray:  rgb(  61,  61,  61 );
+  --lgray: rgb(  99,  99,  99 );
+  --llgray: rgb( 121, 121, 121 );
+  --fred:   rgb(  88,  66,  66 );
+  --red:    rgb( 125,  66,  66 ); }
+
+html {
+  width: 100%;
+  height: 3100px;
+  margin: 0;
+  padding: 0;
+  background-color: var( --dgray );
+  font-family: 'Courier New', Courier, monospace;
+  font-size: large;
+  scroll-behavior: smooth;
+  -ms-overflow-style: none;
+  scrollbar-width: none; }
+html::-webkit-scrollbar { display: none; }
+body {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: large;
+  margin: 0;
+  position: relative; }
+
+#col_red { color: var( --red ); }
+
+#background {
+  width: 100%;
+  height: 3100px;
+  background-image: linear-gradient( to bottom, rgba( 255, 255, 255, 0 ) 0px, rgba( 255, 255, 255, .777 ) 0px, rgba( 255, 255, 255, 0 ) 0px ), url('./img/background.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: soft-light;
+  opacity: .1; }
+#background_container {
+  width: 100%;
+  height: 3100px;
+  z-index: -2;}
+
+.mission_container {
+  position: absolute;
+  top: 333px;
+  width: 100%;
+  height: 250px;
+  background-color: var( --dgray );
+  box-shadow: inset 0 0 15px rgba( 0, 0, 0, 0.5 );
+  overflow: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none; }
+.mission_statement {
+  position: relative;
+  top: 10px;
+  left: 50%;
+  transform: translateX( -50% );
+  width: 75%;
+  max-width: 940px;
+  height: 240px;
+  text-align: center;
+  color:var( --lgray );
+  font-size: 1.2em;
+  padding: 0;
+  margin: 0;
+  line-height: 55px; }
+
+.contact_us {
+  background-color: var( --dgray );
+  border: 2px solid var( --mgray );
+  position: fixed;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX( -50% );
+  min-width: 200px;
+  width: 25%;
+  max-width: 400px;
+  height: 50px;
+  text-align: center;
+  transition: ease-in-out .175s;
+  color: var( --mgray );
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  font-size: large; }
