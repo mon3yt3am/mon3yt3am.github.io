@@ -1,17 +1,21 @@
 // services drop down
 const paragraphs = document.getElementsByClassName( "hidden_txt" );
+const buttons = document.getElementsByClassName( "hidden_link_txt" );
 function hideAllElements() {
-  for( var i = 0; i < paragraphs.length; i++ ) {
+  for( var i = 0; i < paragraphs.length; i++ )
     paragraphs[ i ].style.display = "none";
-  }
+
+  for( var i = 0; i < buttons.length; i++ )
+    buttons[ i ].style.display = "none";
 }
 hideAllElements();
 
 var paragraph_container = document.getElementById( "hidden_paragraph" );
 var activeButton = null;
 function show_paragraph( num ) {
-  var currentParagraph = paragraphs[ num ].nextElementSibling;
   var currentButton = paragraphs[ num ];
+  var currentParagraph = paragraphs[ num ].nextElementSibling;
+  var currentLink = buttons[ num / 2 ];
 
   if( activeButton === currentButton ) {
     paragraph_container.style.top = "1000px";
@@ -21,6 +25,8 @@ function show_paragraph( num ) {
     hideAllElements();
     currentButton.style.display = "block";
     currentParagraph.style.display = "block";
+    currentLink.style.display = "block";
+
     paragraph_container.style.top = "1250px";
     paragraph_container.style.opacity = "1";
 

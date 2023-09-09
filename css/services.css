@@ -5,6 +5,7 @@
   position: absolute;
   top: 1000px;
   left: 50%;
+  z-index: 1;
   transform: translateX( -50% );
   min-width: 450px;
   width: 50%;
@@ -46,7 +47,7 @@
 .service_hover:hover .service_title { color: var( --dgray ); }
 
 #hidden_paragraph {
-  z-index: -1;
+  z-index: 0;
   position: absolute;
   top: 1000px;
   left: 50%;
@@ -68,3 +69,11 @@
   padding: 10px;
   font-size: 1.5em;
   text-align: left; }
+.hidden_link_txt {
+  position: absolute;
+  bottom: 5px;
+  right: 5px; }
+.hidden_link_btn {
+  background-color: var( --dgray );
+  border-color: var( --lgray );
+  color: var( --lgray ); }
