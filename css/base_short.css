@@ -40,3 +40,18 @@ body {
   width: 100%;
   height: 3100px;
   z-index: -2; }
+
+.description_container {
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  max-width: 800px;
+  height: 20%;
+  background-color: var( --dgray );
+  border-radius: 10px;
+  border-color: var( --red );
+  box-shadow: 0 0 10px var( --fred );
+  padding: 0 15px;
+  color: var( --lgray ); }
