@@ -8,7 +8,7 @@
 
 html {
   width: 100%;
-  height: 0%;
+  height: 0;
   margin: 0;
   padding: 0;
   background-color: var( --dgray );
@@ -17,7 +17,7 @@ html {
   scroll-behavior: smooth;
   -ms-overflow-style: none;
   scrollbar-width: none;
-  overflow: hidden; }
+  overflow: scroll; }
 html::-webkit-scrollbar { display: none; }
 body {
   font-family: 'Courier New', Courier, monospace;
@@ -43,15 +43,15 @@ body {
 
 .description_container {
   position: absolute;
-  top: 15%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 90%;
   max-width: 800px;
-  height: 20%;
+  height: auto;
   background-color: var( --dgray );
   border-radius: 10px;
   border-color: var( --red );
   box-shadow: 0 0 10px var( --fred );
-  padding: 0 15px;
+  padding: 0 15px 0 30px;
   color: var( --lgray ); }
