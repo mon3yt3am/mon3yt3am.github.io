@@ -41,15 +41,22 @@
 .hover_underline_anim:hover::after {
   transform: scaleX(1);
   transform-origin: bottom left; }
-#logo {
+
+#logo_container {
   position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 222px;
+  height: 105px; }
+#logo {
+  position: relative;
   top: 15px;
   left: 10px;
   width: 75px;
   height: 75px; }
 .brand_name {
-  position: absolute;
-  top: 15px;
+  position: relative;
+  top: -65px;
   left: 85px;
   color: var( --mgray );
   font-size: 1.5em; }
