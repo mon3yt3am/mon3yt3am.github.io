@@ -15,7 +15,7 @@
   position: relative;
   top: 10px;
   right: 0;
-  color: var( --mgray );
+  color: var( --lgray );
   text-decoration: none;
   transition: color .111s ease-in-out;
   display: inline-block;
@@ -58,5 +58,5 @@
   position: relative;
   top: -65px;
   left: 85px;
-  color: var( --mgray );
+  color: var( --lgray );
   font-size: 1.5em; }

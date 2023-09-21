@@ -9,7 +9,7 @@
   min-width: 450px;
   width: 50%;
   max-width: 1000px;
-  color: var( --mgray );
+  color: var( --lgray );
   text-align: center; }
 #about {
   position: absolute;
@@ -21,7 +21,7 @@
   max-width: 1500px;
   border: 1px solid var( --red );
   background-color: var( --dgray );
-  color: var( --mgray ); }
+  color: var( --lgray ); }
 #about_top {
   position: relative;
   top: 0px;

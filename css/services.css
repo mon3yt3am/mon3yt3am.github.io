@@ -11,7 +11,7 @@
   width: 50%;
   max-width: 1000px;
   border-collapse: collapse;
-  border: 3px solid var( --mgray ); }
+  border: 3px solid var( --lgray ); }
 .service_header {
   position: absolute;
   top: 920px;
@@ -20,7 +20,7 @@
   min-width: 450px;
   width: 50%;
   max-width: 1000px;
-  color: var( --mgray );
+  color: var( --lgray );
   text-align: center; }
 .service_icons {
   color: var( --fred );
@@ -29,7 +29,7 @@
   right: -38%;
   transition: background-color .222s ease-in-out; }
 .service_title {
-  color: var( --mgray );
+  color: var( --lgray );
   position: relative;
   top: -10px;
   left: 15px;
@@ -65,7 +65,7 @@
   width: 70%;
   height: 100%;
   display: none;
-  color: var( --mgray );
+  color: var( --lgray );
   padding: 10px;
   font-size: 1.5em;
   text-align: left; }
