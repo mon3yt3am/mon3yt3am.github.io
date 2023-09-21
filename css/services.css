@@ -69,6 +69,7 @@
   padding: 10px;
   font-size: 1.5em;
   text-align: left; }
+.hidden_p { top: 15%; }
 .hidden_link_txt {
   position: absolute;
   bottom: 5px;
