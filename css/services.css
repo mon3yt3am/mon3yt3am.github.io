@@ -48,10 +48,12 @@
 
 #hidden_paragraph {
   z-index: 0;
+  opacity: 0;
   position: absolute;
   top: 1000px;
   left: 50%;
   transform: translateX( -50% );
+  height: 275px;
   min-width: 400px;
   width: 50%;
   max-width: 800px;
@@ -60,7 +62,7 @@
   transition: ease-in-out .222s; }
 #hidden_paragraph>h2 { text-align: center; }
 .hidden_txt {
-  position: relative;
+  position: absolute;
   left: 15%;
   width: 70%;
   height: 100%;
@@ -69,12 +71,17 @@
   padding: 10px;
   font-size: 1.5em;
   text-align: left; }
-.hidden_p { top: 15%; }
+.hidden_p { top: 45px; }
 .hidden_link_txt {
   position: absolute;
-  bottom: 5px;
+  top: 100px;
   right: 5px; }
 .hidden_link_btn {
   background-color: var( --dgray );
   border-color: var( --lgray );
-  color: var( --lgray ); }
+  color: var( --lgray );
+  position: fixed;
+  left: 10%;
+  top: 225px;
+  width: 80%; }
+.hidden_link_btn:hover { cursor: pointer; }
