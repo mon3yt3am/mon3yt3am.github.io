@@ -1,9 +1,9 @@
 #about_us {
   position: absolute;
-  top: 1800px; }
+  top: 1500px; }
 .about_header {
   position: absolute;
-  top: 1920px;
+  top: 1620px;
   left: 50%;
   transform: translateX( -50% );
   min-width: 450px;
@@ -13,7 +13,7 @@
   text-align: center; }
 #about {
   position: absolute;
-  top: 2000px;
+  top: 1700px;
   left: 50%;
   transform: translateX( -50% );
   min-width: 450px;

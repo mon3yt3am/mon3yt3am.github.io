@@ -3,7 +3,6 @@
 ## todo:
 - [ ] photoshop light and dark backgrounds
 - [ ] change about us divs to be clickable to open a draggable, resizable, closable bio window
-- [ ] add any highlighted changes from the doc
 - [ ] add FAQ
 - - [ ] add "Have more questions or want to contact us directly?" button that drops down email form
 - [ ] add light mode switch

@@ -3,7 +3,7 @@ var scroll_percent_mapped = 0;
 var background = document.getElementById( "background" );
 function move_highlight( ) {
   const top = -205;
-  const bottom = 3100 - window.innerHeight;
+  const bottom = 2700 - window.innerHeight;
   const scroll_percent = ( window.scrollY - top ) / ( bottom - top ) * 100; // test removing - top from scrollY
   scroll_percent_mapped = scroll_percent * ( window.innerHeight / 100 ) + window.scrollY;
   background.style.backgroundImage = 'linear-gradient( to bottom, rgba( 255, 255, 255, 0 ) ' + ( scroll_percent_mapped - 100 ) + 'px, rgba( 255, 255, 255, .777 ) ' + scroll_percent_mapped + 'px, rgba( 255, 255, 255, 0 ) ' + ( scroll_percent_mapped + 100 ) + 'px ), url("./img/background.webp")';
