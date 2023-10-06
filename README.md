@@ -1,11 +1,8 @@
 # [mon3yt3am](https://mon3yt3am.github.io)
 
 ## todo:
-- [ ] convert images to webp
 - [ ] change about us divs to be clickable to open a draggable, resizable, closable bio window
-- - [ ] take from your nohat.tv code ( or 2lagv2 )
-- [ ] add FAQ
-- - [ ] add "Have more questions or want to contact us directly?" button that drops down email form
+- [ ] add FAQ w/ "Have more questions or want to email us directly?" button that drops down email form
 - [ ] add light mode switch
 
 spencer suggestions :
