@@ -59,6 +59,11 @@ function get_time_of_day() {
     return "evening";
 }
 
+function get_coding_time() {
+  const currentTime = new Date();
+  return currentTime.getFullYear() - 2016;
+}
+
 // about us popup windows
 $( document ).ready( () => {
   $('.about_container').on( 'click', event => {
@@ -190,7 +195,7 @@ $( document ).ready( () => {
         popup_bio.innerHTML = "I am Reece Gardner, an AI advocate, entrepreneur, and artist specializing in text-to-image generation and AI Graphic Design. With a year in the generative AI field, I bring expertise in workflow optimization and leadership as a CEO in my own ventures, overseeing a marketing team producing content on platforms like Instagram, TikTok, Snapchat, and YouTube Shorts. At snap.<span id='col_red'>red</span>, I focus on AI-driven graphic designs, business workflow enhancement, and consulting on AI tools to boost efficiency for individuals and organizations.";
         break;
       case "aiden h.":
-        popup_bio.innerHTML = "Good " + get_time_of_day() + ", I am the Lead Software Consultant for snap.red. Born and raised in Dallas, I became acclimated with technology from a young age, and started a slow entrance to my coding journey at 16. Nowadays, production has ramped up and I take on everything from scripts, to websites, desktop applications, and everything in between.";
+        popup_bio.innerHTML = "Good " + get_time_of_day() + ", I am the Lead Software Consultant for snap.<span id='col_red'>red</span>. Born and raised in Dallas, I became acclimated with technology from a young age. I began with elementary scripting throughout the schooldays, but for the past " + get_coding_time() + " years, I have taken it up a notch or two. Today, production has ramped up and I take on everything from websites to desktop applications, and everything in between.";
         break;
       case "rhesa t.":
         popup_bio.innerHTML = "My name is Rhesa Teesdale, I am the Founder of Prophet | Envoy, and the Lead Marketing Consultant here at snap.<span id='col_red'>red</span>. I graduated from Babson College this past spring with a double concentration in Entrepreneurship & Consulting and I am currently a graduate student pursuing a Master of Science in Entrepreneurial Leadership at Babson's F.W Graduate School of Business. I have worked in marketing for four years and have accrued over 75 million impressions across all social media platforms. I specialize in creating viral content templates on TikTok & Instagram to drive traffic to your websites.";
