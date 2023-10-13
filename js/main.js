@@ -145,7 +145,8 @@ $( document ).ready( () => {
     { // add the persons name from the p tag in the about_container
       var popup_name = document.createElement( "h2" );
       popup_name.id = "popup_name";
-      popup_name.innerHTML = event.target.nextElementSibling ? event.target.nextElementSibling.innerHTML : "undefined";
+      // get text of the p tag inside of the about_container that was clicked using jQuery
+      popup_name.innerHTML = $( event.target ).parent().children( "p" ).text();
 
       popup_name.style.position = "absolute";
       popup_name.style.top = "10px";
@@ -169,7 +170,7 @@ $( document ).ready( () => {
     popup.appendChild( popup_image_element );
 
     { // add the appropriate bio based off of a switch statement from the name
-      var popup_name_comparable = event.target.nextElementSibling ? event.target.nextElementSibling.innerHTML : "undefined";
+      var popup_name_comparable = $( event.target ).parent().children( "p" ).text();
       var popup_bio = document.createElement( "p" );
 
       { // bio styling
