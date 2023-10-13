@@ -74,6 +74,7 @@ $( document ).ready( () => {
     { // popup styling
       popup.style.position = "absolute";
       popup.style.left = popup_x + "px";
+      popup.style.top = "-100000px";
       popup.style.width = popup_w + "px";
       popup.style.height = "auto";
       popup.style.background = "rgb( 24, 24, 24 )";
@@ -83,10 +84,11 @@ $( document ).ready( () => {
       popup.style.userSelect = "none";
     }
     document.body.appendChild( popup );
-
-    $( popup ).ready( () => {
+    
+    var popup_y;
+    $( popup ).ready( () => { // get popup height when loaded to get random y position
       var popup_h = popup.offsetHeight;
-      var popup_y = scrollY + 125 + Math.floor( Math.random() * ( window.innerHeight - 125 - popup_h ) );
+      popup_y = scrollY + 125 + Math.floor( Math.random() * ( window.innerHeight - 125 - popup_h ) );
       popup.style.top = popup_y + "px";
     });
 
