@@ -151,7 +151,9 @@ $( document ).ready( () => {
       var popup_name = document.createElement( "h2" );
       popup_name.id = "popup_name";
       // get text of the p tag inside of the about_container that was clicked using jQuery
-      popup_name.innerHTML = $( event.target ).parent().children( "p" ).text();
+      popup_name.innerHTML = $( event.target ).parent().children( "p" ).text() ? 
+                                $( event.target ).parent().children( "p" ).text() :
+                                $( event.target ).children( "p" ).text();
 
       popup_name.style.position = "absolute";
       popup_name.style.top = "10px";
@@ -161,10 +163,12 @@ $( document ).ready( () => {
     popup.appendChild( popup_name );
 
     { // image porting
-      var popup_image = event.target;
-      if( popup_image.tagName === "P" )
-        popup_image = popup_image.previousElementSibling;
       var popup_image_element = document.createElement( "img" );
+
+      var popup_image = $( event.target ).parent().children( "img" ).get( 0 ) ?
+                        $( event.target ).parent().children( "img" ).get( 0 ) :
+                        $( event.target ).children( "img" ).get( 0 );
+
       popup_image_element.src = popup_image.src ? popup_image.src : "./img/logo.webp";
       popup_image_element.style.position = "relative";
       popup_image_element.style.width = "33%";
@@ -175,7 +179,7 @@ $( document ).ready( () => {
     popup.appendChild( popup_image_element );
 
     { // add the appropriate bio based off of a switch statement from the name
-      var popup_name_comparable = $( event.target ).parent().children( "p" ).text();
+      var popup_name_comparable = popup_name.innerHTML.toLowerCase();
       var popup_bio = document.createElement( "p" );
 
       { // bio styling
@@ -187,7 +191,7 @@ $( document ).ready( () => {
       }
       
 
-      switch( popup_name_comparable.toLowerCase() ) {
+      switch( popup_name_comparable ) {
       case "demarre j.":
         popup_bio.innerHTML = "I'm Demarre Johnson, a social entrepreneur who has spent more than 5 years studying business concentrating in accounting, having since done over 8 internships in various fields of finance, accounting, and business. As snap.<span id='col_red'>red</span>'s founder, my years of expertise have columinated into a degree this spring at Babson, 500k+ views on social media, and more than 10 internships.";
         break;
