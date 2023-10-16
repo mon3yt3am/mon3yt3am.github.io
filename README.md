@@ -1,6 +1,7 @@
 # [mon3yt3am](https://mon3yt3am.github.io)
 
 ## todo:
+- [ ] if same person clicked twice, close
 - [ ] add FAQ w/ "Have more questions or want to email us directly?" button that drops down email form
 - [ ] add light mode switch
 
