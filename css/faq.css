@@ -6,8 +6,9 @@ body {
 #faq {
   position: absolute;
   border-radius: 10px;
+  min-width: 425px;
   width: 50%;
-  box-shadow: 0 0 10px var( --llgray );
+  box-shadow: 0 0 5px var( --llgray );
   color: var( --lgray );
   left: 50%;
   top: 250px;
@@ -18,15 +19,14 @@ body {
   height: auto;
   transition: background-color 0.3s ease-in-out;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
 }
 
-.qna:hover {
-  cursor: pointer;
-}
+.qna:hover { cursor: pointer; }
 
 .question-container {
-  width: 100%;
+  width: inherit;
   height: auto;
   border: 1px solid var( --lgray );
   background-color: var( --dgray );
@@ -36,14 +36,17 @@ body {
 
 .question {
   float: left;
+  padding: 0 25px 0 0;
 }
 
 .answer {
   overflow: hidden;
   transition: max-height 0.3s ease-in-out;
   text-align: center;
-  padding: 15px;
+  padding: 35px 20px;
 }
+
+.answer a { color: white; }
 
 .icon-container {
   position: relative;

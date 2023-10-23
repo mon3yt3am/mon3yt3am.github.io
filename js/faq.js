@@ -22,7 +22,7 @@ $(document).ready( () => {
     $(e.currentTarget).find('.icon-container').toggleClass('active');
 
     // hide all answers
-    $('.answer').hide();
+    $('.answer').slideUp();
     
     // slide down answer (child of e)
     $(e.currentTarget).find('.answer').slideToggle('slow');

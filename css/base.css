@@ -16,7 +16,10 @@ html {
   font-size: large;
   scroll-behavior: smooth;
   -ms-overflow-style: none;
-  scrollbar-width: none; }
+  scrollbar-width: none;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */ }
 html::-webkit-scrollbar { display: none; }
 body {
   font-family: 'Courier New', Courier, monospace;
