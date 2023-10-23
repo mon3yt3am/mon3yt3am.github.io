@@ -10,7 +10,8 @@
     display: block; }
 .options>div {
   position: absolute;
-  right: 0; }
+  right: 0;
+  text-align: right; }
 .options>div>a {
   position: relative;
   top: 10px;
@@ -19,8 +20,8 @@
   text-decoration: none;
   transition: color .111s ease-in-out;
   display: inline-block;
-  margin: 0 25px;
-  padding: 50px 5px 10px 5px;
+  margin: 0 5px;
+  padding: 50px 5px 10px;
   font-size: 1.5em; }
 .options>a:hover { color: var( --llgray ); }
 .hover_underline_anim {

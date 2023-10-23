@@ -64,11 +64,35 @@ function get_coding_time() {
   return currentTime.getFullYear() - 2016;
 }
 
+// if window is resized, change icons in nav bar
+window.addEventListener( "resize", () => {
+  $('.options').children().first().next().children().first().html( window.innerWidth < 650 ? '<i class="fa-solid fa-house"></i>' : 'Home' );
+  $('.options').children().first().next().children().first().next().html( window.innerWidth < 625 ? '<i class="fa-solid fa-briefcase"></i>' : 'Service' );
+  $('.options').children().first().next().children().first().next().next().html( window.innerWidth < 600 ? '<i class="fa-solid fa-people-group"></i>' : 'About' );
+  $('.options').children().first().next().children().first().next().next().next().html( window.innerWidth < 575 ? '<i class="fa-solid fa-circle-question"></i>' : 'FAQ' );
+});
+
 // about us popup windows
 $( document ).ready( () => {
+  var open = false;
+
   $('.about_container').on( 'click', event => {
-    if( $('#popup') !== null )
+    if( $('#popup') !== null ) { // if a popup exists close the popup
+      var same_name = false;
+      var name_clicked = $( event.target ).parent().children( "p" ).text() ? 
+                          $( event.target ).parent().children( "p" ).text() :
+                          $( event.target ).children( "p" ).text();
+      var name_popup = $( '#popup_name' ).text();
+
+      if( name_clicked === name_popup ) // if the name clicked is the same as the name in the popup early exit
+        same_name = true;
+
+      
       $('#popup').remove();
+
+      if( same_name )
+        return;
+    }
 
     var popup = document.createElement( "div" );
     popup.id = "popup";
